@@ -1,0 +1,57 @@
+BLOOD BANK MANAGEMENT SYSTEM
+
+//TABLE 1
+PATIENT TABLE
+
+P_ID(PK),  P_NAME, AGE,  GENDER,  BLOOD_GROUP, PHONE_NO, ADDRESS, BLOOD_REQUEST,   DATE_OF_REQUEST
+
+//TABLE 2
+DONOR TABLE
+
+D_ID(PK), D_NAME, AGE, GENDER, BLOOD_GROUP, WEIGHT, PHONE_NO, ADDRESS, DIESEASE, DATE_OF_DONATION, NO_OF_DONATION, ELIGIBILITY
+
+//TABLE 3
+BLOOD TABLE
+
+B_ID(PK), B_NAME, PRICE, BAG_SOLD 
+
+//TABLE 4
+STOCK TABLE
+
+BAG_ID(PK), B_ID(FK), UNIT_LEFT, BOX_NUMBER
+
+//TABLE 5
+HOSPITAL TABLE
+
+H_ID(PK), H_NAME, ADDRESS, BLOOD_AVAILABILITY
+
+//TABLE 6
+BLOOD REQUEST TABLE
+
+R_ID(PK), P_ID(FK), BLOOD_REQUIRED, UNIT_REQUIRED, DATE
+
+Normalization Assignment (20 points)
+Your task is to construct an E-R diagram and the resulting normalized tables to solve the scenario below. You should present your results beginning with a Conceptual ERD (your initial impression of the scenario) and the corresponding Dependency Diagrams. From this continue to normalize until you have a complete set of related tables.
+Your task is to develop the database design for a small company’s personnel office.
+They would like to be able to track the assignment history of their employees as well as capture required bio-demographic data. Data must be captured to identify employees (name, address(s), gender, contact information, DOB, salary), jobs (title, description), and departments (code, description, contact information).
+ They also need the ability to report on: Department Staffing
+Employee breakdown by city/state Assignment history
+Vacant jobs
+Hints:
+— Begin by taking the point of view of the employee
+— Employee ........ Jobs (1:M)
+— Take a top-down approach; start with E-R and move to attribute
+definition
+definition
+— Look for partial and transitive dependencies
+— Remember to make attributes as atomic as possible
+— Feel free to add any attributes you think are necessary
+Requirements:
+In this assignment, you are responsible for the following:
+— E-R diagram based on your initial view of the database
+
+— Entity definition; list all fields, primary key, and foreign keys
+— E-R diagram based upon your final ("'normalized view") of the database
+
+
+     
